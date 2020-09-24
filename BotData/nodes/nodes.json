@@ -1,0 +1,423 @@
+{
+  "nodes": [
+    {
+      "type": "command",
+      "name": "help",
+      "guid": "7942fe4c-dffa-4146-8cab-d254b3d80d5d",
+      "outputs": [
+        {
+          "label": "responses",
+          "connections": [
+            "37eda463-a170-44f9-af54-61378ffc9294"
+          ]
+        }
+      ],
+      "x": 45,
+      "y": 112
+    },
+    {
+      "type": "command",
+      "name": "info",
+      "guid": "2224944a-561a-4fa1-824b-2f31ea37c836",
+      "outputs": [
+        {
+          "label": "responses",
+          "connections": []
+        }
+      ],
+      "x": 614,
+      "y": 552
+    },
+    {
+      "type": "response",
+      "name": "help menu",
+      "guid": "37eda463-a170-44f9-af54-61378ffc9294",
+      "reactionFields": [],
+      "embedfields": [
+        {
+          "name": "Group link!",
+          "value": "https://www.roblox.com/groups/4772685/",
+          "inline": "true"
+        },
+        {
+          "name": "Swanlake (Operations)",
+          "value": "https://www.roblox.com/games/4764843257/",
+          "inline": "true"
+        },
+        {
+          "name": "Catford (Operations)",
+          "value": "https://www.roblox.com/games/2522057077/",
+          "inline": "true"
+        }
+      ],
+      "outputs": [
+        {
+          "label": "next response",
+          "connections": [
+            "26d28a14-059a-4aa6-8b7e-c511b08ae54a"
+          ]
+        }
+      ],
+      "inputs": [
+        {
+          "label": "trigger",
+          "id": "7942fe4c-dffa-4146-8cab-d254b3d80d5d"
+        }
+      ],
+      "x": 221,
+      "y": 112,
+      "rtype": "Message",
+      "rsubtype": "Send Embed",
+      "formdata": [
+        "${dbsVars.CommandChannel.id}",
+        "1F9AFF",
+        "",
+        "",
+        "Welcome!",
+        "",
+        "",
+        "Welcome to the official stagecoach discord, in this server you can talk to the owner of the discord and talk to other members of the discord!\n\nBelow you will find all infomation about the discord & Group.",
+        "${dbsVars.guild.iconURL}",
+        "",
+        "",
+        "false",
+        "",
+        "temp"
+      ],
+      "formnames": [
+        "channelname",
+        "color",
+        "title",
+        "url",
+        "authorname",
+        "authorimageurl",
+        "authorlink",
+        "description",
+        "thumbnail",
+        "image",
+        "footer",
+        "timestamp",
+        "saveToVariable",
+        "saveToVariableType"
+      ]
+    },
+    {
+      "type": "response",
+      "name": "ye",
+      "guid": "26d28a14-059a-4aa6-8b7e-c511b08ae54a",
+      "reactionFields": [],
+      "embedfields": [],
+      "outputs": [
+        {
+          "label": "next response",
+          "connections": []
+        }
+      ],
+      "inputs": [
+        {
+          "label": "trigger",
+          "id": "37eda463-a170-44f9-af54-61378ffc9294"
+        }
+      ],
+      "x": 393,
+      "y": 108,
+      "rtype": "Message",
+      "rsubtype": "Send Embed",
+      "formdata": [
+        "${dbsVars.CommandChannel.id}",
+        "1F9AFF",
+        "How to join roles?",
+        "",
+        "",
+        "",
+        "",
+        "Please use the role reactions below this message.",
+        "",
+        "",
+        "This is set for current time things may change ",
+        "BOOL_TRUE@@",
+        "",
+        "temp"
+      ],
+      "formnames": [
+        "channelname",
+        "color",
+        "title",
+        "url",
+        "authorname",
+        "authorimageurl",
+        "authorlink",
+        "description",
+        "thumbnail",
+        "image",
+        "footer",
+        "timestamp",
+        "saveToVariable",
+        "saveToVariableType"
+      ]
+    },
+    {
+      "type": "command",
+      "name": "joindevp",
+      "guid": "7eae341a-62c7-463e-99a5-d720f609438c",
+      "outputs": [
+        {
+          "label": "responses",
+          "connections": []
+        }
+      ],
+      "x": 64,
+      "y": 296
+    },
+    {
+      "type": "response",
+      "name": "JRDP",
+      "guid": "20610d85-b70d-47bd-80d2-80a4a1744449",
+      "reactionFields": [],
+      "embedfields": [],
+      "outputs": [
+        {
+          "label": "next response",
+          "connections": []
+        }
+      ],
+      "inputs": [
+        {
+          "label": "trigger",
+          "id": "7d65ae3d-701b-4243-833d-d1e47df958aa"
+        }
+      ],
+      "x": 946,
+      "y": 150,
+      "rtype": "User Action",
+      "rsubtype": "Add Role to User",
+      "formdata": [
+        "${tempVars.menuser.id}",
+        "1"
+      ],
+      "formnames": [
+        "user",
+        "roleName"
+      ]
+    },
+    {
+      "type": "response",
+      "name": "1",
+      "guid": "44b8790e-674e-43b2-b98b-82c85fa47eab",
+      "embedfields": [],
+      "outputs": [
+        {
+          "label": "next response",
+          "connections": []
+        }
+      ],
+      "inputs": [
+        {
+          "label": "trigger",
+          "id": []
+        }
+      ],
+      "x": 432,
+      "y": 532,
+      "rtype": "Variable",
+      "rsubtype": "Store Value in Variable"
+    },
+    {
+      "type": "response",
+      "name": "rr",
+      "guid": "ee01f9a8-226e-48d9-b969-620d7513f3cf",
+      "reactionFields": [
+        "👷🏻‍♂️",
+        "🚌"
+      ],
+      "embedfields": [],
+      "outputs": [
+        {
+          "label": "👷🏻‍♂️",
+          "connections": []
+        },
+        {
+          "label": "🚌",
+          "connections": []
+        }
+      ],
+      "inputs": [
+        {
+          "label": "trigger",
+          "id": "23157e08-1874-4efb-b84b-539ced1310cf"
+        }
+      ],
+      "x": 953,
+      "y": 426,
+      "rtype": "Reaction",
+      "rsubtype": "Add Reaction Listener",
+      "formdata": [
+        "${tempVars.rolemenu.id}",
+        "600000000",
+        "emojime",
+        "menuser",
+        "BOOL_TRUE@@"
+      ],
+      "formnames": [
+        "message",
+        "duration",
+        "reactionemoji",
+        "reactionuser",
+        "react"
+      ]
+    },
+    {
+      "type": "response",
+      "name": "rm",
+      "guid": "23157e08-1874-4efb-b84b-539ced1310cf",
+      "reactionFields": [],
+      "embedfields": [],
+      "saveToVariable": "rolemenu",
+      "saveToVariableType": "temp",
+      "outputs": [
+        {
+          "label": "next response",
+          "connections": [
+            "7d65ae3d-701b-4243-833d-d1e47df958aa"
+          ]
+        }
+      ],
+      "inputs": [
+        {
+          "label": "trigger",
+          "id": "7de05139-37f3-421f-8128-d568adbe3d3a"
+        }
+      ],
+      "x": 423,
+      "y": 241,
+      "rtype": "Message",
+      "rsubtype": "Send Embed",
+      "formdata": [
+        "${dbsVars.CommandChannel.id}",
+        "1F9AFF",
+        "Role reactions",
+        "",
+        "",
+        "",
+        "",
+        "Use the Emojis below\n\n👷🏻‍♂️  - Development previews\n🚌 - Shift's",
+        "",
+        "",
+        "",
+        "false",
+        "rolemenu",
+        "temp"
+      ],
+      "formnames": [
+        "channelname",
+        "color",
+        "title",
+        "url",
+        "authorname",
+        "authorimageurl",
+        "authorlink",
+        "description",
+        "thumbnail",
+        "image",
+        "footer",
+        "timestamp",
+        "saveToVariable",
+        "saveToVariableType"
+      ]
+    },
+    {
+      "type": "response",
+      "name": "shifts",
+      "guid": "0add81d1-f58e-4215-afbc-217ee42e7af0",
+      "reactionFields": [],
+      "embedfields": [],
+      "outputs": [
+        {
+          "label": "next response",
+          "connections": []
+        }
+      ],
+      "inputs": [
+        {
+          "label": "trigger",
+          "id": "7d65ae3d-701b-4243-833d-d1e47df958aa"
+        }
+      ],
+      "x": 908,
+      "y": 305,
+      "rtype": "User Action",
+      "rsubtype": "Add Role to User",
+      "formdata": [
+        "${tempVars.menuser.id}",
+        "2"
+      ],
+      "formnames": [
+        "user",
+        "roleName"
+      ]
+    },
+    {
+      "type": "response",
+      "name": "rrl",
+      "guid": "7d65ae3d-701b-4243-833d-d1e47df958aa",
+      "reactionFields": [
+        "👷🏻‍♂️",
+        "🚌"
+      ],
+      "embedfields": [],
+      "outputs": [
+        {
+          "label": "👷🏻‍♂️",
+          "connections": [
+            "20610d85-b70d-47bd-80d2-80a4a1744449"
+          ]
+        },
+        {
+          "label": "🚌",
+          "connections": [
+            "0add81d1-f58e-4215-afbc-217ee42e7af0"
+          ]
+        }
+      ],
+      "inputs": [
+        {
+          "label": "trigger",
+          "id": "23157e08-1874-4efb-b84b-539ced1310cf"
+        }
+      ],
+      "x": 737,
+      "y": 126,
+      "rtype": "Reaction",
+      "rsubtype": "Add Reaction Listener",
+      "formdata": [
+        "${tempVars.rolemenu.id}",
+        "6000000000 ",
+        "emojime",
+        "menuser",
+        "BOOL_TRUE@@"
+      ],
+      "formnames": [
+        "message",
+        "duration",
+        "reactionemoji",
+        "reactionuser",
+        "react"
+      ]
+    },
+    {
+      "type": "command",
+      "name": ".help",
+      "guid": "7de05139-37f3-421f-8128-d568adbe3d3a",
+      "outputs": [
+        {
+          "label": "responses",
+          "connections": [
+            "23157e08-1874-4efb-b84b-539ced1310cf"
+          ]
+        }
+      ],
+      "x": 250,
+      "y": 250
+    }
+  ]
+}

@@ -1,0 +1,126 @@
+{
+  "command": [
+    {
+      "name": "help",
+      "actions": [
+        {
+          "name": "help menu",
+          "category": "Message",
+          "type": "Send Embed",
+          "fields": [
+            {
+              "name": "Group link!",
+              "value": "https://www.roblox.com/groups/4772685/",
+              "inline": "true"
+            },
+            {
+              "name": "Swanlake (Operations)",
+              "value": "https://www.roblox.com/games/4764843257/",
+              "inline": "true"
+            },
+            {
+              "name": "Catford (Operations)",
+              "value": "https://www.roblox.com/games/2522057077/",
+              "inline": "true"
+            }
+          ],
+          "channelname": "${dbsVars.CommandChannel.id}",
+          "color": "1F9AFF",
+          "title": "",
+          "url": "",
+          "authorname": "Welcome!",
+          "authorimageurl": "",
+          "authorlink": "",
+          "description": "Welcome to the official stagecoach discord, in this server you can talk to the owner of the discord and talk to other members of the discord!\n\nBelow you will find all infomation about the discord & Group.",
+          "thumbnail": "${dbsVars.guild.iconURL}",
+          "image": "",
+          "footer": "",
+          "timestamp": "false",
+          "savetovariable": "",
+          "savetovariabletype": "temp"
+        },
+        {
+          "name": "ye",
+          "category": "Message",
+          "type": "Send Embed",
+          "channelname": "${dbsVars.CommandChannel.id}",
+          "color": "1F9AFF",
+          "title": "How to join roles?",
+          "url": "",
+          "authorname": "",
+          "authorimageurl": "",
+          "authorlink": "",
+          "description": "Please use the role reactions below this message.",
+          "thumbnail": "",
+          "image": "",
+          "footer": "This is set for current time things may change ",
+          "timestamp": "BOOL_TRUE@@",
+          "savetovariable": "",
+          "savetovariabletype": "temp"
+        }
+      ]
+    },
+    {
+      "name": "info",
+      "actions": []
+    },
+    {
+      "name": "joindevp",
+      "actions": []
+    },
+    {
+      "name": ".help",
+      "actions": [
+        {
+          "name": "rm",
+          "category": "Message",
+          "type": "Send Embed",
+          "channelname": "${dbsVars.CommandChannel.id}",
+          "color": "1F9AFF",
+          "title": "Role reactions",
+          "url": "",
+          "authorname": "",
+          "authorimageurl": "",
+          "authorlink": "",
+          "description": "Use the Emojis below\n\n👷🏻‍♂️  - Development previews\n🚌 - Shift's",
+          "thumbnail": "",
+          "image": "",
+          "footer": "",
+          "timestamp": "false",
+          "savetovariable": "rolemenu",
+          "savetovariabletype": "temp"
+        },
+        {
+          "name": "rrl",
+          "category": "Reaction",
+          "type": "Add Reaction Listener",
+          "reactionActions": {
+            "👷🏻‍♂️": [
+              {
+                "name": "JRDP",
+                "category": "User Action",
+                "type": "Add Role to User",
+                "user": "${tempVars.menuser.id}",
+                "rolename": "1"
+              }
+            ],
+            "🚌": [
+              {
+                "name": "shifts",
+                "category": "User Action",
+                "type": "Add Role to User",
+                "user": "${tempVars.menuser.id}",
+                "rolename": "2"
+              }
+            ]
+          },
+          "message": "${tempVars.rolemenu.id}",
+          "duration": "6000000000 ",
+          "reactionemoji": "emojime",
+          "reactionuser": "menuser",
+          "react": "BOOL_TRUE@@"
+        }
+      ]
+    }
+  ]
+}

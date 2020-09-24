@@ -124,6 +124,7 @@
     },
     {
       "name": "announce",
+      "perms": [],
       "actions": [
         {
           "name": "user perms",
@@ -155,6 +156,15 @@
               "image": "",
               "footer": "Announcement from ${dbsVars.CommandAuthor.displayName}",
               "timestamp": "false",
+              "savetovariable": "",
+              "savetovariabletype": "temp"
+            },
+            {
+              "name": "@every",
+              "category": "Message",
+              "type": "Send Message",
+              "channelname": "announcements",
+              "messagetext": "@everyone",
               "savetovariable": "",
               "savetovariabletype": "temp"
             }

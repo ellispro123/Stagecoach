@@ -186,6 +186,32 @@
           ]
         }
       ]
+    },
+    {
+      "name": "suggest",
+      "perms": [],
+      "actions": [
+        {
+          "name": "muggest mess",
+          "category": "Variable",
+          "type": "Store Value in Variable",
+          "varname": "Sugg",
+          "vartype": "Text",
+          "savevartype": "temp",
+          "param": "0"
+        },
+        {
+          "name": "suggest mess",
+          "category": "Message",
+          "type": "Embed Poll",
+          "title": "New suggestion",
+          "color": "1F9AFF",
+          "description": "${tempVars.Sugg}",
+          "thumbnail": "",
+          "image": "",
+          "options": "Yes, No"
+        }
+      ]
     }
   ]
 }

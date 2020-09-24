@@ -45,12 +45,12 @@
           "type": "Send Embed",
           "channelname": "${dbsVars.CommandChannel.id}",
           "color": "1F9AFF",
-          "title": "How to join roles?",
+          "title": "Rules",
           "url": "",
           "authorname": "",
           "authorimageurl": "",
           "authorlink": "",
-          "description": "Please use the role reactions below this message.",
+          "description": "**_(SC) Stagecoach Discord Server Rules:_**\n\n[1] Racism and Homophobia will not be tolerated in any way, shape or form.\n[2] Please refrain from using bad language in this server. Now and again it is acceptable, however, please limit the amount that it is used.\n[3] You may give constructive feedback, however, if it turns into intentional harassment or bullying of somebody then it will simply not be tolerated.\n[4] Please do not spam any channel of this server.\n[5] Please do not advertise other groups on here.\n[6] Please do not ask for release dates or ask to be accepted into the group.\n[7] No underaged users anyone found underaged will be banned and reported \n[8] NO pornography \n[9] NO pinging me - as of now dont ping me unless needed as im doing work for stagecoach.\nHow will the rules be enforced?\n\nThe senior and executive team will be on hand to ensure that members of the server are respecting the conduct that is in place. If you have any issues about a breach of the rules, or require further information, feel free to drop a PM to a senior/exec",
           "thumbnail": "",
           "image": "",
           "footer": "This is set for current time things may change ",
@@ -119,6 +119,61 @@
           "reactionemoji": "emojime",
           "reactionuser": "menuser",
           "react": "BOOL_TRUE@@"
+        }
+      ]
+    },
+    {
+      "name": "announce",
+      "actions": [
+        {
+          "name": "user perms",
+          "category": "User Action",
+          "type": "Check User Permissions",
+          "trueActions": [
+            {
+              "name": "1",
+              "category": "Variable",
+              "type": "Store Value in Variable",
+              "varname": "Announce",
+              "vartype": "Text",
+              "savevartype": "temp",
+              "param": "0"
+            },
+            {
+              "name": "announce mess",
+              "category": "Message",
+              "type": "Send Embed",
+              "channelname": "announcements",
+              "color": "1F9AFF",
+              "title": "${dbsVars.guild.name} announcement ",
+              "url": "",
+              "authorname": "Announcement",
+              "authorimageurl": "",
+              "authorlink": "",
+              "description": "${tempVars.Announce}",
+              "thumbnail": "",
+              "image": "",
+              "footer": "Announcement from ${dbsVars.CommandAuthor.displayName}",
+              "timestamp": "false",
+              "savetovariable": "",
+              "savetovariabletype": "temp"
+            }
+          ],
+          "falseActions": [
+            {
+              "name": "No perm",
+              "category": "Message",
+              "type": "Send Message",
+              "channelname": "${dbsVars.CommandAuthor.user.dmChannel}",
+              "messagetext": "You dont have perms to use the Announcement command.",
+              "savetovariable": "",
+              "savetovariabletype": "temp"
+            }
+          ],
+          "user": "${dbsVars.CommandAuthor.id}",
+          "permissions": [
+            "MENTION_EVERYONE"
+          ]
         }
       ]
     }

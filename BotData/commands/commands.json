@@ -267,7 +267,27 @@
               "savetovariabletype": "temp"
             }
           ],
-          "falseActions": [],
+          "falseActions": [
+            {
+              "name": "Noperms",
+              "category": "Message",
+              "type": "Send Embed",
+              "channelname": "${dbsVars.CommandAuthor.user.dmChannel}",
+              "color": "FFFFFF",
+              "title": "",
+              "url": "",
+              "authorname": "",
+              "authorimageurl": "",
+              "authorlink": "",
+              "description": "Nope perms",
+              "thumbnail": "",
+              "image": "",
+              "footer": "",
+              "timestamp": "false",
+              "savetovariable": "",
+              "savetovariabletype": "temp"
+            }
+          ],
           "user": "${dbsVars.CommandAuthor.id}",
           "permissions": [
             "MENTION_EVERYONE"

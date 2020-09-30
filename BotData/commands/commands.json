@@ -256,6 +256,15 @@
               "timestamp": "false",
               "savetovariable": "",
               "savetovariabletype": "temp"
+            },
+            {
+              "name": "everyping",
+              "category": "Message",
+              "type": "Send Message",
+              "channelname": "swanlake",
+              "messagetext": "@everyone",
+              "savetovariable": "",
+              "savetovariabletype": "temp"
             }
           ],
           "falseActions": [],

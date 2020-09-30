@@ -212,6 +212,59 @@
           "options": "Yes, No"
         }
       ]
+    },
+    {
+      "name": "sl",
+      "perms": [],
+      "actions": [
+        {
+          "name": "peruserperm",
+          "category": "User Action",
+          "type": "Check User Permissions",
+          "trueActions": [
+            {
+              "name": "mess mess",
+              "category": "Variable",
+              "type": "Store Value in Variable",
+              "varname": "slann",
+              "vartype": "Text",
+              "savevartype": "temp",
+              "param": "0"
+            },
+            {
+              "name": "message",
+              "category": "Message",
+              "type": "Send Embed",
+              "fields": [
+                {
+                  "name": "Swanlake",
+                  "value": "https://www.roblox.com/games/4764843257/",
+                  "inline": "true"
+                }
+              ],
+              "channelname": "swanlake",
+              "color": "1F9AFF",
+              "title": "Swanlake announcement",
+              "url": "https://www.roblox.com/games/4764843257/",
+              "authorname": "Swanlake",
+              "authorimageurl": "",
+              "authorlink": "",
+              "description": "${tempVars.slann}",
+              "thumbnail": "",
+              "image": "",
+              "footer": "Announcement from ${dbsVars.CommandAuthor.displayName}",
+              "timestamp": "false",
+              "savetovariable": "",
+              "savetovariabletype": "temp"
+            }
+          ],
+          "falseActions": [],
+          "user": "${dbsVars.CommandAuthor.id}",
+          "permissions": [
+            "MENTION_EVERYONE"
+          ]
+        }
+      ]
     }
   ]
 }

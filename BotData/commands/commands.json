@@ -269,21 +269,11 @@
           ],
           "falseActions": [
             {
-              "name": "Noperms",
+              "name": "noperm",
               "category": "Message",
-              "type": "Send Embed",
+              "type": "Send Message",
               "channelname": "${dbsVars.CommandAuthor.user.dmChannel}",
-              "color": "FFFFFF",
-              "title": "",
-              "url": "",
-              "authorname": "",
-              "authorimageurl": "",
-              "authorlink": "",
-              "description": "Nope perms",
-              "thumbnail": "",
-              "image": "",
-              "footer": "",
-              "timestamp": "false",
+              "messagetext": "You dont have perms silly :P",
               "savetovariable": "",
               "savetovariabletype": "temp"
             }

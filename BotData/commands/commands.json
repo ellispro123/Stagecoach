@@ -19,8 +19,8 @@
               "inline": "true"
             },
             {
-              "name": "Catford (Operations)",
-              "value": "https://www.roblox.com/games/2522057077/",
+              "name": "London & East (Operations)",
+              "value": "https://www.roblox.com/games/5945194297/",
               "inline": "true"
             }
           ],
@@ -70,57 +70,7 @@
     },
     {
       "name": ".help",
-      "actions": [
-        {
-          "name": "rm",
-          "category": "Message",
-          "type": "Send Embed",
-          "channelname": "${dbsVars.CommandChannel.id}",
-          "color": "1F9AFF",
-          "title": "Role reactions",
-          "url": "",
-          "authorname": "",
-          "authorimageurl": "",
-          "authorlink": "",
-          "description": "Use the Emojis below\n\n👷🏻‍♂️  - Development previews\n🚌 - Shift's",
-          "thumbnail": "",
-          "image": "",
-          "footer": "",
-          "timestamp": "false",
-          "savetovariable": "rolemenu",
-          "savetovariabletype": "temp"
-        },
-        {
-          "name": "rrl",
-          "category": "Reaction",
-          "type": "Add Reaction Listener",
-          "reactionActions": {
-            "👷🏻‍♂️": [
-              {
-                "name": "JRDP",
-                "category": "User Action",
-                "type": "Add Role to User",
-                "user": "${tempVars.menuser.id}",
-                "rolename": "1"
-              }
-            ],
-            "🚌": [
-              {
-                "name": "shifts",
-                "category": "User Action",
-                "type": "Add Role to User",
-                "user": "${tempVars.menuser.id}",
-                "rolename": "2"
-              }
-            ]
-          },
-          "message": "${tempVars.rolemenu.id}",
-          "duration": "6000000000 ",
-          "reactionemoji": "emojime",
-          "reactionuser": "menuser",
-          "react": "BOOL_TRUE@@"
-        }
-      ]
+      "actions": []
     },
     {
       "name": "announce",

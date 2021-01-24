@@ -150,7 +150,7 @@
           "type": "Store Value in Variable",
           "varname": "Sugg",
           "vartype": "Text",
-          "savevartype": "global",
+          "savevartype": "temp",
           "param": "0"
         },
         {
@@ -171,17 +171,6 @@
           "timestamp": "false",
           "savetovariable": "",
           "savetovariabletype": "temp"
-        },
-        {
-          "name": "suggest mess",
-          "category": "Message",
-          "type": "Embed Poll",
-          "title": "New suggestion",
-          "color": "1F9AFF",
-          "description": "${tempVars.Sugg}",
-          "thumbnail": "",
-          "image": "",
-          "options": "Yes, No"
         }
       ]
     },

@@ -154,6 +154,25 @@
           "param": "0"
         },
         {
+          "name": "gk45rg",
+          "category": "Message",
+          "type": "Send Embed",
+          "channelname": "<#${dbsVars.CommandChannel.id}>",
+          "color": "FFFFFF",
+          "title": "",
+          "url": "",
+          "authorname": "",
+          "authorimageurl": "",
+          "authorlink": "",
+          "description": "${globalVars.Sugg}",
+          "thumbnail": "",
+          "image": "",
+          "footer": "",
+          "timestamp": "false",
+          "savetovariable": "",
+          "savetovariabletype": "temp"
+        },
+        {
           "name": "suggest mess",
           "category": "Message",
           "type": "Embed Poll",

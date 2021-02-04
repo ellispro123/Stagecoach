@@ -22,8 +22,8 @@
               "inline": "true"
             },
             {
-              "name": "London & East (Operations)",
-              "value": "https://www.roblox.com/games/5945194297/",
+              "name": "",
+              "value": "",
               "inline": "true"
             }
           ],
@@ -273,6 +273,60 @@
           "field": "410544538608861206",
           "compare": "equal to",
           "value": "410544538608861206"
+        }
+      ]
+    },
+    {
+      "name": "Sr",
+      "perms": [
+        "chairman"
+      ],
+      "actions": [
+        {
+          "name": "srr",
+          "category": "Message",
+          "type": "Send Embed",
+          "channelname": "${dbsVars.CommandChannel.id}",
+          "color": "FF0000",
+          "title": "Staff Reports!",
+          "url": "",
+          "authorname": "",
+          "authorimageurl": "",
+          "authorlink": "",
+          "description": "Template:\n\nYour username:\nStaff member:\nUsers role:\nReport with evidence:\n\n(Please note reports with no evidence will be dismissed)",
+          "thumbnail": "",
+          "image": "",
+          "footer": "",
+          "timestamp": "BOOL_TRUE@@",
+          "savetovariable": "",
+          "savetovariabletype": "temp"
+        }
+      ]
+    },
+    {
+      "name": "br",
+      "perms": [
+        "chairman"
+      ],
+      "actions": [
+        {
+          "name": "srr_1",
+          "category": "Message",
+          "type": "Send Embed",
+          "channelname": "${dbsVars.CommandChannel.id}",
+          "color": "FF0000",
+          "title": "Bug Reports!",
+          "url": "",
+          "authorname": "",
+          "authorimageurl": "",
+          "authorlink": "",
+          "description": "Template:\n\nYour username:\nGame:\nIssue and where on the map:\nReport with evidence:\n\n(Please note reports with no evidence will be dismissed)",
+          "thumbnail": "",
+          "image": "",
+          "footer": "",
+          "timestamp": "BOOL_TRUE@@",
+          "savetovariable": "",
+          "savetovariabletype": "temp"
         }
       ]
     }

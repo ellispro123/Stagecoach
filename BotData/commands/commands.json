@@ -17,8 +17,13 @@
               "inline": "true"
             },
             {
-              "name": "Swanlake (Operations)",
+              "name": "Padleawood (Operations)",
               "value": "https://www.roblox.com/games/4764843257/",
+              "inline": "true"
+            },
+            {
+              "name": "Lerstrood (Operations)",
+              "value": "https://www.roblox.com/games/2337209898/",
               "inline": "true"
             },
             {
@@ -249,32 +254,6 @@
     {
       "name": "help",
       "actions": []
-    },
-    {
-      "name": "eval",
-      "actions": [
-        {
-          "name": "user",
-          "category": "User Data",
-          "type": "Check User Data",
-          "trueActions": [
-            {
-              "name": "Yes",
-              "category": "Message",
-              "type": "Send Message",
-              "channelname": "<#${dbsVars.CommandChannel.id}>",
-              "messagetext": "@everyone",
-              "savetovariable": "",
-              "savetovariabletype": "temp"
-            }
-          ],
-          "falseActions": [],
-          "user": "${dbsVars.CommandAuthor.id}",
-          "field": "410544538608861206",
-          "compare": "equal to",
-          "value": "410544538608861206"
-        }
-      ]
     },
     {
       "name": "Sr",

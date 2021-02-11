@@ -253,7 +253,17 @@
     },
     {
       "name": "help",
-      "actions": []
+      "perms": [
+        "founder"
+      ],
+      "actions": [
+        {
+          "name": "ee",
+          "category": "Message",
+          "type": "Console Log",
+          "logtext": "e"
+        }
+      ]
     },
     {
       "name": "Sr",

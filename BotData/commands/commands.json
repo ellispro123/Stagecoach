@@ -344,7 +344,7 @@
               "color": "1F9AFF",
               "title": "${dbsVars.guild.name} Shift ",
               "url": "",
-              "authorname": "Announcement",
+              "authorname": "shift",
               "authorimageurl": "",
               "authorlink": "",
               "description": "${tempVars.Shift}\n",
@@ -359,7 +359,7 @@
               "name": "@every_1",
               "category": "Message",
               "type": "Send Message",
-              "channelname": "announcements",
+              "channelname": "shifts",
               "messagetext": "@Shift ping",
               "savetovariable": "",
               "savetovariabletype": "temp"

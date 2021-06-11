@@ -372,6 +372,47 @@
           ]
         }
       ]
+    },
+    {
+      "name": "ellis",
+      "actions": [
+        {
+          "name": "11",
+          "category": "Variable",
+          "type": "Get Mentioned User",
+          "varname": "warn",
+          "vartype": "User",
+          "savevartype": "temp"
+        },
+        {
+          "name": "112",
+          "category": "Variable",
+          "type": "Store Value in Variable",
+          "varname": "warn1",
+          "vartype": "Text",
+          "savevartype": "temp",
+          "param": "0"
+        },
+        {
+          "name": "warning",
+          "category": "Message",
+          "type": "Send Embed",
+          "channelname": "${tempVars.warn.user.dmChannel}",
+          "color": "FFFFFF",
+          "title": "test",
+          "url": "",
+          "authorname": "",
+          "authorimageurl": "",
+          "authorlink": "",
+          "description": "${tempVars.warn1}",
+          "thumbnail": "",
+          "image": "",
+          "footer": "",
+          "timestamp": "BOOL_TRUE@@",
+          "savetovariable": "",
+          "savetovariabletype": "temp"
+        }
+      ]
     }
   ]
 }
